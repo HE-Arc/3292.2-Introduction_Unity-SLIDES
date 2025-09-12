@@ -1,0 +1,296 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>HE-Arc - Template - Index page</title>
+
+  <link rel="stylesheet" href="dist/reset.css">
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/hearc.css" id="theme">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="https://www.he-arc.ch/wp-content/uploads/2021/12/cropped-hearc-icon-192x192.png"
+    type="image/vnd.microsoft.icon" />
+
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="plugin/highlight/vs.css" id="highlight-theme">
+</head>
+
+<body>
+  <img id="logo-hearc" src="./medias/logo_he-arc.png" alt="Logo HE-ARC">
+  <img id="logo-hesso" src="./medias/logo_hes-so.png" alt="Logo HES-SO">
+  <p id="course-infos">9999.9 Titre du cours - 2024-2025 - Benoit Le Callennec</p>
+
+  <!----------          CONTENT          ---------->
+  <div class="reveal">
+    <div class="slides">
+
+      <section data-transition="none" data-background-video-loop data-background-video-muted data-vertical-align-top
+        data-background-video="http://enseignement.pages.ing.he-arc.ch/isc/cours/niveau-3/3292.2-infographie-unity/medias/Videos/Chapter6_final.mp4">
+        <h1>
+          TITRE COURS
+        </h1>
+        <h2>
+          Sous-titre
+        </h2>
+        <h2>&nbsp;</h2>
+        <h2>&nbsp;</h2>
+        <h2>&nbsp;</h2>
+        <h2>&nbsp;</h2>
+        <h2>&nbsp;</h2>
+        <h2>&nbsp;</h2>
+      </section>
+
+      <section>
+        <h2>Titre slide (h2)</h2>
+        <h3>Sous-titre slide (h3)</h3>
+        <h4>Sous-sous-titre slide (h4)</h4>
+        <p>Texte normal</p>
+      </section>
+
+      <section>
+        <h2>2 Colonnes</h2>
+        <div class="container">
+          <div class="col-left">
+            <h3>Titre colonne gauche</h3>
+            <h4>Sous-titre colonne gauche</h4>
+            <p>Texte colonne gauche</p>
+            <p>Encore du texte</p>
+          </div>
+          <div class="col-right">
+            <h3>Titre colonne droite</h3>
+            <h4>Sous-titre colonne droite</h4>
+            <p>Texte colonne droite</p>
+            <p>Encore du texte</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Slide avec une image</h2>
+        <img data-src="./medias/UnityShaderGraphVoronoiExample.gif" width="1350px" />
+      </section>
+
+      <section>
+        <h2>Slide avec du code C++</h2>
+
+        <pre style="width: 1000px;"><code
+                    class="c++"
+                    data-trim
+                    data-noescape
+                    style="font-size: 1.2em;"
+                    data-line-numbers="1-9999|1|3|4-6">
+
+                    #include &#60;iostream&#62;
+                        
+                    void C::test()
+                    {
+                        auto var = 0;
+                        if (var == 0)
+                        {
+                            std::cout << "var is 0" << std::endl;
+                        }
+                        else
+                        {
+                            std::cout << "var is not 0" << std::endl;
+                        }
+                    }
+
+                    bool C::test2()
+                    {
+                        for (int i = 0; i < 10; i++)
+                        {
+                            std::cout << i << std::endl;
+                        }                     
+                    }
+
+                    int main(void)
+                    {
+                      std::cout << "Hello, World!" << std::endl;
+
+                      return 0;
+                    }
+                </code></pre>
+      </section>
+
+      <section>
+        <h2>Code avec des tailles différentes</h2>
+
+        <pre style="width: 1000px;"><code
+                    class="c++"
+                    data-trim
+                    data-noescape
+                    style="font-size: 1em;">
+
+                    #include &#60;iostream&#62;
+                    int main(void)
+                    {
+                      std::cout << "Hello, World!" << std::endl;
+                      return 0;
+                    }
+                </code></pre>
+        <br>
+        <pre style="width: 1000px;"><code
+                  class="c++"
+                  data-trim
+                  data-noescape
+                  style="font-size: 1.4em;">
+
+                  #include &#60;iostream&#62;
+                  int main(void)
+                  {
+                    std::cout << "Hello, World!" << std::endl;
+                    return 0;
+                  }
+              </code></pre>
+        <br>
+        <pre style="width: 1000px;"><code
+                class="c++"
+                data-trim
+                data-noescape
+                style="font-size: 1.8em;">
+
+                #include &#60;iostream&#62;
+                int main(void)
+                {
+                  std::cout << "Hello, World!" << std::endl;
+                  return 0;
+                }
+            </code></pre>
+        <br>
+
+      </section>
+
+      <section>
+        <h2>Une slide contenant un site web</h2>
+        <iframe src="https://www.tiobe.com/tiobe-index/" width="1600px" height="1000px"></iframe>
+      </section>
+
+
+
+      <section>
+        <h2>Youtube video</h2>
+        <center>
+          <iframe width="1200" height="675" src="https://www.youtube.com/embed/YdJoH3u1Od4" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </center>
+      </section>
+
+      <section>
+        <h2>Youtube playlist</h2>
+        <center>
+          <iframe width="1200" height="675"
+            src="https://www.youtube.com/embed/videoseries?list=PLoMYgUbrKKtdJFJc0irQnTctVRSXH1-B5" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </center>
+      </section>
+
+      <section>
+        <h2>Divers formatages</h2>
+        <p>Voici un <highlight>Texte surligné</highlight>...</p>
+        <p>Voici un <s>texte barré</s>.</p>
+        <p>
+          <success>✅ À faire :</success> ceci est une bonne pratique.
+        </p>
+        <p>
+          <warning>⚠️ Attention :</warning> ceci est un message d'alerte.
+        </p>
+        <p>
+          <error>⛔ Éviter de faire ça.</error>
+        </p>
+        <p>📌 Une note qui demande à être d'approfondie</p>
+        <p>📚 Une référence à étudier pour aller plus loin</p>
+        <p>🔍 Une recherche à effectuer</p>
+        <p>📝 Un exercice à faire</p>
+        <p>⇒ Implication de la ligne précédente</p>
+        <p>🌶️ Une notion avancée</p>
+        <p>Ceci un exemple pour inclure du <inline-code>code en ligne</inline-code> dans le texte.</p>
+        <p>Un code à ne pas reproduire chez soi comme <s><inline-code>if (x) {</inline-code></s> par exemple.</p>
+        <p>Voici un <box>texte dans une boîte.</box></p>
+      </section>
+
+      <section>
+        <h2>Draw shapes on top of code</h2>
+        <pre style="width: 1000px;"><code
+                    class="c++"
+                    data-trim
+                    data-noescape
+                    style="font-size: 1.2em;"
+                    data-line-numbers="1-9999|1|3|4-6">
+
+                    #include &#60;iostream&#62;
+                        
+                    void C::test()
+                    {
+                        auto var = 0;
+                        if (var == 0)
+                        {
+                            std::cout << "var is 0" << std::endl;
+                        }
+                        else
+                        {
+                            std::cout << "var is not 0" << std::endl;
+                        }
+                    }
+
+                    bool C::test2()
+                    {
+                        for (int i = 0; i < 10; i++)
+                        {
+                            std::cout << i << std::endl;
+                        }                     
+                    }
+
+                    int main(void)
+                    {
+                      std::cout << "Hello, World!" << std::endl;
+
+                      return 0;
+                    }
+
+                </code></pre>
+
+        <overlay style="top:580px;left:200px">
+          <p align="center">
+            Cette partie du code est vraiment très importante !
+            Il faut donc bien la comprendre pour la suite du cours.
+          </p>
+        </overlay>
+
+      </section>
+
+    </div>
+  </div>
+  </div>
+
+  <!----------          CONTENT          ---------->
+
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+      hash: true,
+      width: 1920,
+      height: 1080,
+      transition: "none",
+      center: false,
+      slideNumber: 'c/t',
+
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+    });
+  </script>
+</body>
+
+</html>
