@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>HE-Arc - Unity - Chapitre 0</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/hearc.css" id="theme">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://www.he-arc.ch/sites/www.he-arc.ch/files/hearc_favicon.ico"
+        type="image/vnd.microsoft.icon" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+    <div id="logo-hearc"></div>
+    <div id="logo-hesso"></div>
+    <div id="course-infos">3292.2 Imagerie Numérique, Unity - 2024-2025 - Benoit Le Callennec</div>
+
+    <!----------          CONTENT          ---------->
+    <div class="reveal">
+        <div class="slides">
+
+            <section data-transition="none" data-background-video-loop data-background-video-muted
+                data-vertical-align-top data-background-video="http://enseignement.pages.ing.he-arc.ch/isc/cours/niveau-3/3292.2-infographie-unity/medias/Videos/3DEverything-ComputerClassroom.mp4">
+                <h1>
+                    chapitre 0
+                </h1>
+                <h2>
+                    introduction
+                </h2>
+                <img data-src="./medias/UnityLogoTransparent.png" height="400px" />
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="col-left">
+                        <h2>
+                            Applications Finales
+                        </h2>
+                        <h3>
+                            2D / 3D Temps-réelle
+                        </h3>
+                    </div>
+                    <div class="col-right">
+                        <center>
+                            <iframe width="734" height="413"
+                                src="https://www.youtube.com/embed/videoseries?list=PLoMYgUbrKKtdJFJc0irQnTctVRSXH1-B5"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </center>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="col-left">
+                        <h2>
+                            Potentiel de la visualisation<br>3D temps-réelle
+                        </h2>
+                        <h3>
+                            <highlight>348</highlight> leaders de l'industrie
+                        </h3>
+                        <p>
+                            <highlight>19%</highlight> l'utilisent (94% pensent augmenter encore)
+                        </p>
+                        <p>
+                            <highlight>55%</highlight> l'utiliseront dans les 2 ans
+                        </p>
+                    </div>
+                    <div class="col-right">
+                        <img data-src="./medias/Forrester.png" />
+                    </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="col-left">
+                        <h2>Avant le cours</h2>
+                        <p>Lire la théorie</p>
+                        <p>Poser des questions sur TEAMS si besoin</p>
+                    </div>
+                    <div class="col-right">
+                        <h2>Pendant le cours</h2>
+                        <p>Théorie : rapide résumé</p>
+                        <p>Pratique : démos à suivre</p>
+                        <p>Pratique : expérimenter et avancer sur le projet</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="col-left">
+                        <h2>Projet Unity</h2>
+                        <h3>À RENDRE (sur gitlab)</h3>
+                        <p>Git avec Unity PROPRE</p>
+                        <p>Rapport indiquant ce que vous avez fait</p>
+                        <p>Démo-vidéo (2 min. MAX)</p>
+                    </div>
+                    <div class="col-right">
+                        <img data-src="./medias/HE-Arc.jpg" />
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="col-left">
+                        <h2>Getting Started</h2>
+                        <h3>Unity 2022.3</h3>
+                        <h3>Unity Hub</h3>
+                        <h3>Créer un projet</h3>
+                        <h3>Intégration avec Visual Studio</h3>
+                    </div>
+                    <div class="col-right">
+                        <img data-src="./medias/UnityHubCreateProject.png" />
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+    </div>
+
+    <!----------          CONTENT          ---------->
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+            width: 1920,
+            height: 1080,
+            //transition: "none",
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+        });
+    </script>
+</body>
+
+</html>

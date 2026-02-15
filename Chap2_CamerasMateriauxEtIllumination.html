@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>HE-Arc - Unity - Chapitre 2</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/hearc.css" id="theme">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://www.he-arc.ch/sites/www.he-arc.ch/files/hearc_favicon.ico"
+        type="image/vnd.microsoft.icon" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+    <div id="logo-hearc"></div>
+    <div id="logo-hesso"></div>
+    <div id="course-infos">3292.2 Outils d'infographie - 2024-2025 - Benoit Le Callennec</div>
+
+    <!----------          CONTENT          ---------->
+    <div class="reveal">
+        <div class="slides">
+
+            <section data-transition="none" data-background-video-loop data-background-video-muted
+                data-vertical-align-top data-background-video="http://enseignement.pages.ing.he-arc.ch/isc/cours/niveau-3/3292.2-infographie-unity/medias/Videos/Chapter2_final.mp4">
+                <h1>
+                    chapitre 2
+                </h1>
+                <h2>
+                    Caméras, matériaux et illumination
+                </h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="col-left">
+                        <h2>
+                            Camera Component
+                        </h2>
+                        <h3>
+                            Background Type
+                        </h3>
+                        <h3>
+                            Projection
+                        </h3>
+                        <h3>
+                            Field of View
+                        </h3>
+                        <h3>
+                            Clipping Planes
+                        </h3>
+                        <h3>
+                            Viewport Rect
+                        </h3>
+                        <h3>
+                            Culling Mask
+                        </h3>
+                        <h3>
+                            Output / Output Texture
+                        </h3>
+                    </div>
+                    <div class="col-right">
+                        <img data-src="./medias/UnityCameraCullingMask.png" />
+                    </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="col-left">
+                        <h2>
+                            Material Asset
+                        </h2>
+                        <h3>
+                            Gère le rendu des GameObjects
+                        </h3>
+                        <h3>
+                            Données : entiers, flottants, Textures, etc.
+                        </h3>
+                        <h3>
+                            Calculs : effectués par le Shader
+                        </h3>
+                    </div>
+                    <div class="col-right">
+                        <img data-src="./medias/UnityURPLitShader.png" />
+                    </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="col-left">
+                        <h2>
+                            Light Component
+                        </h2>
+                        <h3>
+                            3 modes : temps-réelles, pré-calculées, hybrides
+                        </h3>
+                        <h3>
+                            4 types : Directional, Point, Spot et Area
+                        </h3>
+                        <h3>
+                            Culling Mask
+                        </h3>
+                    </div>
+                    <div class="col-right">
+                        <img data-src="./medias/UnityLightCullingMask.png" />
+                    </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="col-left">
+                        <h2>
+                            Lumière environnementale
+                        </h2>
+                        <h3>
+                            1. Skybox
+                        </h3>
+                        <h3>
+                            2. Lumière ambiante
+                        </h3>
+                        <h3>
+                            3. Réflexions de l'environnement
+                        </h3>
+                        <h3>
+                            4. Fog
+                        </h3>
+                    </div>
+                    <div class="col-right">
+                        <img data-src="./medias/UnityLightingWindow.png" />
+                    </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="col-left">
+                        <h2>
+                            Ombres
+                        </h2>
+                        <h3>
+                            Shadow Map
+                        </h3>
+                        <h3>
+                            Qualité (dans URP Asset)
+                        </h3>
+                        <h3>
+                            Par GameObject
+                        </h3>
+                        <h3>
+                            Par lumière
+                        </h3>
+                    </div>
+                    <div class="col-right">
+                        <img data-src="./medias/UnityURPShadowSettings.png" />
+                    </div>
+            </section>
+        </div>
+
+    </div>
+    </div>
+
+    <!----------          CONTENT          ---------->
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+            width: 1920,
+            height: 1080,
+            //transition: "none",
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+        });
+    </script>
+</body>
+
+</html>

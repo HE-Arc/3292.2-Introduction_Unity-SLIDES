@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>HE-Arc - Unity - Chapitre 6</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/hearc.css" id="theme">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://www.he-arc.ch/sites/www.he-arc.ch/files/hearc_favicon.ico"
+        type="image/vnd.microsoft.icon" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+    <div id="logo-hearc"></div>
+    <div id="logo-hesso"></div>
+    <div id="course-infos">3292.2 Outils d'infographie - 2023-2024 - Benoit Le Callennec</div>
+
+    <!----------          CONTENT          ---------->
+    <div class="reveal">
+        <div class="slides">
+
+            <section data-transition="none" data-background-video-loop data-background-video-muted
+                data-vertical-align-top data-background-video="http://enseignement.pages.ing.he-arc.ch/isc/cours/niveau-3/3292.2-infographie-unity/medias/Videos/Chapter6_final.mp4">
+                <h1>
+                    chapitre 6
+                </h1>
+                <h2>
+                    Post-Processing
+                </h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+            </section>
+
+            <section>
+                <h2>
+                    Introduction
+                </h2>
+                <h3>
+                    Motion Blur, Color Grading, Bloom, Vigneting, etc.
+                </h3>
+                <h3>
+                    Effets appliquée au rendu de la caméra
+                </h3>
+                <h3>
+                    Peuvent varier en fonction de la position de la caméra
+                </h3>
+            </section>
+            <section>
+                <h2>
+                    Configuration Initial
+                </h2>
+                <div class="container">
+                    <div class="col-left">
+                        <h3>
+                            Activer le post-processing pour la caméra principale
+                        </h3>
+                        <h3>
+                            Rajouter un Global Volume
+                        </h3>
+                    </div>
+                    <div class="col-right">
+                        <img data-src="./medias/UnityCreateVolumeMenu.png" width="100%" />
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>
+                    Configuration Initial
+                </h2>
+                <div class="container">
+                    <div class="col-left">
+                        <h3>
+                            Activer le post-processing pour la caméra principale
+                        </h3>
+                        <h3>
+                            Rajouter un Global Volume
+                        </h3>
+                        <h3>
+                            Créer un Profile
+                        </h3>
+                    </div>
+                    <div class="col-right">
+                        <img data-src="./medias/UnityCreateNewProfileButton.png" width="100%" />
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>
+                    Rajouter un effet
+                </h2>
+                <div class="container">
+                    <div class="col-left">
+                        <h3>
+                            Créer un <highlight>Override</highlight>
+                        </h3>
+                    </div>
+                    <div class="col-right">
+                        <img data-src="./medias/UnityAddOverrideButton.png" width="60%" />
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>
+                    Effet local
+                </h2>
+                <div class="container">
+                    <div class="col-left">
+                        <h3>
+                            Modifier le <highlight>Global Volume</highlight>
+                        </h3>
+                    </div>
+                    <div class="col-right">
+                        <img data-src="./medias/UnityVolumeModeSetting.png" width="60%" />
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>
+                    Effet local
+                </h2>
+                <div class="container">
+                    <div class="col-left">
+                        <h3>
+                            Modifier le <highlight>Global Volume</highlight>
+                        </h3>
+                        <h3>
+                            Rajouter un <highlight>Collider</highlight>
+                        </h3>
+                    </div>
+                    <div class="col-right">
+                        <img data-src="./medias/UnityVolumeAddCollider.png" width="60%" />
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>
+                    Quelques effets (avec démos)
+                </h2>
+                <div class="container">
+                    <div class="col-left">
+                        <h3><highlight>Tonemapping</highlight></h3>
+                        <h3><highlight>White Balance</highlight></h3>
+                        <h3><highlight>Color Adjustements</highlight></h3>
+                        <h3><highlight>Vignette</highlight></h3>
+                        <h3><highlight>Depth of Field</highlight></h3>
+                        <h3><highlight>Bloom</highlight></h3>
+                    </div>
+                    <div class="col-right">
+                        <p>
+                            Channel Mixer,
+                            Chromatic Aberration,
+                            Color Curves,
+                            Film Grain,
+                            Lens Distortion,
+                            Lift Gamma and Gain,
+                            Motion Blur,
+                            Panini Projection,
+                            Shadows Midtones Highlights,
+                            Split Toning,
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!----------          CONTENT          ---------->
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+            width: 1920,
+            height: 1080,
+            //transition: "none",
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+        });
+    </script>
+</body>
+
+</html>

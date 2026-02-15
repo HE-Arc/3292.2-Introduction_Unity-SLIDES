@@ -1,0 +1,284 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>HE-Arc - Unity - Chapitre 4</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/hearc.css" id="theme">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://www.he-arc.ch/sites/www.he-arc.ch/files/hearc_favicon.ico"
+        type="image/vnd.microsoft.icon" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+    <div id="logo-hearc"></div>
+    <div id="logo-hesso"></div>
+    <div id="course-infos">3292.2 Outils d'infographie - 2024-2025 - Benoit Le Callennec</div>
+
+    <!----------          CONTENT          ---------->
+    <div class="reveal">
+        <div class="slides">
+
+            <section data-transition="none" data-background-video-loop data-background-video-muted
+                data-vertical-align-top
+                data-background-video="http://enseignement.pages.ing.he-arc.ch/isc/cours/niveau-3/3292.2-infographie-unity/medias/Videos/Chapter4_final.mp4">
+                <h1>
+                    chapitre 4
+                </h1>
+                <h2>
+                    Animation 3D
+                </h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+            </section>
+
+            <section>
+                <h2>
+                    Types d'animations 3D
+                </h2>
+                <h3>
+                    Simulation de fluides
+                </h3>
+                <center>
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/s-cDYtNfsl4" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen data-autoplay>
+                    </iframe>
+                </center>
+            </section>
+
+            <section>
+                <h2>
+                    Types d'animations 3D
+                </h2>
+                <h3>
+                    Simulation de fourrures
+                </h3>
+                <center>
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/OdT2CUGBBkI" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen data-autoplay>
+                    </iframe>
+                </center>
+            </section>
+
+            <section>
+                <h2>
+                    Types d'animations 3D
+                </h2>
+                <h3>
+                    Rigid Bodies
+                </h3>
+                <center>
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/xJVwDwIkaM4" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen data-autoplay>
+                    </iframe>
+                </center>
+            </section>
+
+            <section>
+                <h2>
+                    Types d'animations 3D
+                </h2>
+                <h3>
+                    Animation de personnages 3D
+                </h3>
+                <center>
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/gNDrjR45DGY" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen data-autoplay>
+                    </iframe>
+                </center>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="col-left">
+                        <h2>
+                            Unity Asset Store
+                        </h2>
+                        <img data-src="./medias/UnityZombieAnimationPack.png#center" />
+                    </div>
+                    <div class="col-right">
+                        <h2>
+                            Mixamo
+                        </h2>
+                        <img data-src="./medias/Mixamo.png" />
+                    </div>
+            </section>
+
+            <section>
+                <h2>
+                    Ajouter un personnage 3D
+                </h2>
+                <img data-src="./medias/UnityAddZombie.png" width="1400" />
+            </section>
+
+            <section>
+                <h2>
+                    Animator Component
+                </h2>
+                <h3>
+                    Une machine à états finis
+                </h3>
+                <h4>
+                    gérer les Animation Clips
+                </h4>
+                <h4>
+                    changer les animations à la demande (Triggers)
+                </h4>
+                <h4>
+                    Générer / mélanger des animations (Blend Trees)
+                </h4>
+
+                <img data-src="./medias/UnityEmptyAnimatorController.png" width="1400" />
+            </section>
+
+            <section>
+                <h2>
+                    Créer le moteur d'animation 3D
+                </h2>
+                <img data-src="./medias/UnityCreateAnimatorController.png" width="1000" />
+            </section>
+            <section>
+                <h2>
+                    Assigner le moteur d'animation 3D
+                </h2>
+                <img data-src="./medias/UnityAnimatorControllerComponent.png" width="1400" />
+            </section>
+            <section>
+                <h2>
+                    Ouvrir le moteur d'animation 3D
+                </h2>
+                <img data-src="./medias/UnityEmptyAnimatorController.png" width="1400" />
+            </section>
+            <section>
+                <h2>
+                    Créer des nouveaux états
+                </h2>
+                <img data-src="./medias/UnityCreateNewState.png" width="1400" />
+            </section>
+            <section>
+                <h2>
+                    Ajouter des animations 3D
+                </h2>
+                <img data-src="./medias/UnityAddMotionToState.png" width="1400" />
+            </section>
+            <section>
+                <h2>
+                    Ajouter des transitions
+                </h2>
+                <img data-src="./medias/UnityMakeTransition.png" width="1000" />
+            </section>
+            <section>
+                <h2>
+                    Ajouter des Triggers et les ajouters aux Transitions
+                </h2>
+                <img data-src="./medias/UnityCreateTrigger.png" width="1400" />
+            </section>
+
+            <section>
+                <h2>
+                    PRATIQUE
+                </h2>
+                <h3>
+                    Créer 2 états intitulés Idle et Attack
+                </h3>
+                <h3>
+                    Leur associer les animations adéquates
+                </h3>
+                <h3>
+                    Rajouter les transitions nécessaires pour passer de Idle à Attack (et vice-versa)
+                </h3>
+                <h3>
+                    Créer les Triggers Attack et les associer aux transitions adéquates.
+                </h3>
+            </section>
+
+            <section>
+                <h2>
+                    Blend Trees
+                </h2>
+                <img data-src="./medias/UnityCreateStateWithBlendTree.png" width="1400" />
+            </section>
+            <section>
+                <h2>
+                    Ajouter des animations 3D au Blend Tree
+                </h2>
+                <img data-src="./medias/UnityAddMotionFieldToBlendTree.png" width="1400" />
+            </section>
+
+            <section>
+                <h2>
+                    PRATIQUE
+                </h2>
+                <h3>
+                    Créer un Blend Tree dans l'état Idle
+                </h3>
+                <h3>
+                    Rajouter 2 paramètres de type Float à l'Animator Controller (Speed et Direction)
+                </h3>
+                <h3>
+                    Choisir le type <b>2D Freeform Direction</b> pour le paramètre Blend Type
+                </h3>
+                <h3>
+                    Rajouter 4 Motion Fields pour les Animation Clips souhaités dans le Blend Tree
+                </h3>
+                <h3>
+                    Pour chaque Motion Field, spécifier les valeurs (vitesse, direction) qu'ils représentent.
+                </h3>
+            </section>
+
+            <section>
+                <h2>
+                    Piloter le moteur d'animations
+                </h2>
+                <center>
+                    <iframe width="1200" height="400"
+                        src="https://docs.unity3d.com/ScriptReference/Animator.SetTrigger.html"></iframe>
+                </center>
+                <center>
+                    <iframe width="1200" height="400"
+                        src="https://docs.unity3d.com/ScriptReference/Animator.SetFloat.html"></iframe>
+                </center>
+            </section>
+
+        </div>
+    </div>
+
+    <!----------          CONTENT          ---------->
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+            width: 1920,
+            height: 1080,
+            //transition: "none",
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+        });
+    </script>
+</body>
+
+</html>

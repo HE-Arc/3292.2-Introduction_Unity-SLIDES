@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>HE-Arc - Unity - Chapitre 7</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/hearc.css" id="theme">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://www.he-arc.ch/sites/www.he-arc.ch/files/hearc_favicon.ico"
+        type="image/vnd.microsoft.icon" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+    <div id="logo-hearc"></div>
+    <div id="logo-hesso"></div>
+    <div id="course-infos">3292.2 Outils d'infographie - 2023-2024 - Benoit Le Callennec</div>
+
+    <!----------          CONTENT          ---------->
+    <div class="reveal">
+        <div class="slides">
+
+            <section data-transition="none" data-background-video-loop data-background-video-muted
+                data-vertical-align-top data-background-video="http://enseignement.pages.ing.he-arc.ch/isc/cours/niveau-3/3292.2-infographie-unity/medias/Videos/Chapter7_final2.mp4">
+                <h1>
+                    chapitre 7
+                </h1>
+                <h2>
+                    Shader Graph
+                </h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+            </section>
+
+            <section>
+                <h2>
+                    Introduction
+                </h2>
+                <div class="container">
+                    <div class="col-left">
+                        <h3>
+                            Créer des <highlight>Shaders</highlight> en connectant les <highlight>Ports</highlight> de
+                            <highlight>Nodes</highlight> entre eux
+                        </h3>
+                        <h3>
+                            <highlight>Nodes</highlight> : calculs / Conversions
+                        </h3>
+                        <h3>
+                            <highlight>Ports</highlight> : données
+                        </h3>
+                        <h3>
+                            <highlight>Connections</highlight> : flux des données
+                        </h3>
+                    </div>
+                    <div class="col-right">
+                        <img data-src="./medias/UnityShaderGraphVoronoiExample2.gif" />
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>
+                    Un Shader Graph est un Asset
+                </h2>
+                <img data-src="./medias/UnityCreateShaderGraph.png" width="80%" />
+            </section>
+
+            <section>
+                <h2>
+                    Aperçu
+                </h2>
+                <div class="container">
+                    <div class="col-left">
+                        <h3>
+                            <highlight>1 - </highlight> Le <b>Blackboard</b> affiche les <highlight>Properties</highlight>
+                        </h3>
+                        <h3>
+                            <highlight>2 - </highlight> : le <highlight>Graph Inspector</highlight>
+                        </h3>
+                        <h3>
+                            <highlight>3 - </highlight> : le <highlight>Master Stack</highlight>
+                        </h3>
+                        <h3>
+                            <highlight>4 - </highlight> : Preview
+                        </h3>
+                    </div>
+                    <div class="col-right">
+                        <img data-src="./medias/UnityShaderGraphWindow.png" width="100%" />
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>
+                    Créer un Node
+                </h2>
+                <img data-src="./medias/UnityShaderGraphCreateNewNode.png" width="80%" />
+            </section>
+
+            <section>
+                <h2>
+                    Connections
+                </h2>
+                <img data-src="./medias/UnityShaderGraphVoronoiExample.gif" width="75%" />
+            </section>
+
+            <section>
+                <h2>
+                    Properties
+                </h2>
+                <img data-src="./medias/UnityShaderGraphVoronoiExample2.gif" width="65%" />
+            </section>
+            
+            <section>
+                <h2>
+                    Animated Colored Voronoi Shader
+                </h2>
+                <img data-src="./medias/UnityShaderGraphVoronoiExampleInEditor.gif" width="70%" />
+            </section>
+        </div>
+    </div>
+
+    <!----------          CONTENT          ---------->
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+            width: 1920,
+            height: 1080,
+            //transition: "none",
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+        });
+    </script>
+</body>
+
+</html>

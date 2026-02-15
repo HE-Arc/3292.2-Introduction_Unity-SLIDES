@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>HE-Arc - Unity - Chapitre 5</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/hearc.css" id="theme">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://www.he-arc.ch/sites/www.he-arc.ch/files/hearc_favicon.ico"
+        type="image/vnd.microsoft.icon" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+    <div id="logo-hearc"></div>
+    <div id="logo-hesso"></div>
+    <div id="course-infos">3292.2 Outils d'infographie - 2024-2025 - Benoit Le Callennec</div>
+
+    <!----------          CONTENT          ---------->
+    <div class="reveal">
+        <div class="slides">
+
+            <section data-transition="none" data-background-video-loop data-background-video-muted
+                data-vertical-align-top data-background-video="http://enseignement.pages.ing.he-arc.ch/isc/cours/niveau-3/3292.2-infographie-unity/medias/Videos/Chapter5_final.mp4">
+                <h1>
+                    chapitre 5
+                </h1>
+                <h2>
+                    Illumination Globale
+                </h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+            </section>
+
+            <section>
+                <h2>
+                    Types d'illuminations
+                </h2>
+                <div class="container">
+                    <div class="col-left">
+                        <h4>
+                            Illumination directe
+                        </h4>
+                        lumières &#8680; objets
+                        <img data-src="http://enseignement.pages.ing.he-arc.ch/isc/cours/niveau-3/3292.2-infographie-unity/medias/Images/GI_OFF.png#center" />
+                    </div>
+                    <div class="col-right">
+                        <h4>
+                            Illumination indirect / globale
+                        </h4>
+                        lumières &#8680; objets &#8680; objets
+                        <img data-src="http://enseignement.pages.ing.he-arc.ch/isc/cours/niveau-3/3292.2-infographie-unity/medias/Images/GI_ON.png#center" />
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>
+                    Illumination globale
+                </h2>
+                <h3>
+                    Simuler les interactions complexes avec la lumière
+                </h3>
+                <p>
+                    Coûteux en temps de calcul + algorithmes compliqués
+                </p>
+                <p>
+                    Pré-calculer (Baking) le plus d’informations possible (Lightmaps)
+                </p>
+                <p>
+                    Ne considère que les GOs marqués comme static                    
+                </p>
+            </section>
+            <section>
+                <h2>
+                    Lighting Settings
+                </h2>
+                <img data-src="http://enseignement.pages.ing.he-arc.ch/isc/cours/niveau-3/3292.2-infographie-unity/medias/Images/UnityLightingWindowMenu.png#center" width="1200"/>
+            </section>
+            <section>
+                <h2>
+                    Lighting Settings
+                </h2>
+                <div class="container">
+                    <div class="col-left">
+                        <h4>
+                            PREVIEW
+                        </h4>
+                        <img data-src="http://enseignement.pages.ing.he-arc.ch/isc/cours/niveau-3/3292.2-infographie-unity/medias/Images/UnityLightingSettingsPREVIEW.png#center" width="640"/>
+                    </div>
+                    <div class="col-right">
+                        <h4>
+                            FINAL
+                        </h4>
+                        <img data-src="http://enseignement.pages.ing.he-arc.ch/isc/cours/niveau-3/3292.2-infographie-unity/medias/Images/UnityLightingSettingsFINAL.png#center" width="640" />
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>
+                    Objets Statiques
+                </h2>
+                <img data-src="http://enseignement.pages.ing.he-arc.ch/isc/cours/niveau-3/3292.2-infographie-unity/medias/Images/UnityInspectorStatic.png#center" width="800"/>
+            </section>
+
+            <section>
+                <h2>
+                    Lumières "baked"
+                </h2>
+                <img data-src="http://enseignement.pages.ing.he-arc.ch/isc/cours/niveau-3/3292.2-infographie-unity/medias/Images/UnityLightBaked.png#center" width="800"/>
+            </section>
+
+            <section>
+                <h2>
+                    Occlusion ambiante
+                </h2>
+                <img data-src="http://enseignement.pages.ing.he-arc.ch/isc/cours/niveau-3/3292.2-infographie-unity/medias/Images/UnityLightingSettingsAO.png#center" width="600"/>
+            </section>
+
+            <section>
+                <h2>
+                    Light Probes
+                </h2>
+                <div class="container">
+                    <div class="col-left">
+                        <img data-src="http://enseignement.pages.ing.he-arc.ch/isc/cours/niveau-3/3292.2-infographie-unity/medias/Images/UnityLightProbeGroupMenu.png#center" width="860"/>
+                    </div>
+                    <div class="col-right">
+                        <img data-src="http://enseignement.pages.ing.he-arc.ch/isc/cours/niveau-3/3292.2-infographie-unity/medias/Images/UnityLightProbeGroupComponent.png#center" width="640" />
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!----------          CONTENT          ---------->
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+            width: 1920,
+            height: 1080,
+            //transition: "none",
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+        });
+    </script>
+</body>
+</html>

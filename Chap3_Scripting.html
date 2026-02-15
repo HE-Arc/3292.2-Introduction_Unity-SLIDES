@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>HE-Arc - Unity - Chapitre 3</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/hearc.css" id="theme">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://www.he-arc.ch/sites/www.he-arc.ch/files/hearc_favicon.ico"
+        type="image/vnd.microsoft.icon" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+    <div id="logo-hearc"></div>
+    <div id="logo-hesso"></div>
+    <div id="course-infos">3292.2 Outils d'infographie - 2024-2025 - Benoit Le Callennec</div>
+
+    <!----------          CONTENT          ---------->
+    <div class="reveal">
+        <div class="slides">
+
+            <section data-transition="none" data-background-video-loop data-background-video-muted
+                data-vertical-align-top data-background-video="http://enseignement.pages.ing.he-arc.ch/isc/cours/niveau-3/3292.2-infographie-unity/medias/Videos/Chapter3_final.mp4">
+                <h1>
+                    chapitre 3
+                </h1>
+                <h2>
+                    Scripting C#
+                </h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="col-left">
+                        <h2>
+                            Hello World
+                        </h2>
+                        <h3>
+                            Attacher un Script à un GO
+                        </h3>
+                        <h3>
+                            <highlight>Start()</highlight> : 1 fois au début
+                        </h3>
+                        <h3>
+                            <highlight>Update()</highlight> : 1 fois / frame
+                        </h3>
+                        <h3>
+                            Debug.Log(string)
+                        </h3>
+                    </div>
+                    <div class="col-right">
+                        <img data-src="./medias/UnityHelloWorldConsole.png" width="600px" />
+                    </div>
+            </section>
+
+            <section>
+                <img data-src="./medias/UnityHelloWorldScript.png" width="1350px" />
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="col-left">
+                        <h2>
+                            Script Component
+                        </h2>
+                        <h3>
+                            <highlight>Component</highlight> attaché à un <highlight>GO</highlight>
+                        </h3>
+                        <h3>
+                            Membres publics modifiables dans l’éditeur
+                        </h3>
+                        <h3>
+                            <highlight>ATTENTION : </highlight> ne pas toucher aux CTor / DTor
+                        </h3>
+                        <h3>
+                            Points d’entrée exécutés en réponse à des événements
+                        </h3>
+                    </div>
+            </section>
+
+            <section>
+                <h2>
+                    Event Functions
+                </h2>
+                <img data-src="./medias/UnityEventFunctionsExecOrder.png" />
+            </section>
+
+            <section>
+                <h2>
+                    Event Functions
+                </h2>
+                <center>
+                    <iframe width="1600" height="750"
+                        src="https://docs.unity3d.com/Manual/ExecutionOrder.html"></iframe>
+                </center>
+            </section>
+
+            <section>
+                <h2>
+                    Time.DeltaTime
+                </h2>
+                <h3>
+                    <highlight>PROBLÈME</highlight><br>
+                    Le frame rate dépend du hardware
+                </h3>
+                <br>
+                <h3>
+                    <highlight>SOLUTION</highlight><br>
+                    <img data-src="./medias/UnityTimeDeltaTime.png" width="1400px"/>
+                </h3>                    
+            </section>
+
+            <section>
+                <h2>
+                    Modifier “son” GO
+                </h2>
+                <h3>
+                    Récupérer un <highlight>Component</highlight> par son type
+                </h3>
+                <img data-src="./medias/UnityGetComponentByType.png" width="1400px"/>
+            </section>
+
+            <section>
+                <h2>
+                    Modifier un autre GO
+                </h2>
+                <h3>
+                    Utiliser des membres publics
+                </h3>
+                <img data-src="./medias/UnityModifyOtherGO1.png" width="1200px"/>
+            </section>
+            <section>
+                <h2>
+                    Modifier un autre GO
+                </h2>
+                <h3>
+                    Modifier ses membres publics
+                </h3>
+                <img data-src="./medias/UnityModifyOtherGO2.png" width="1200px"/>
+            </section>
+            <section>
+                <h2>
+                    Modifier un autre GO
+                </h2>
+                <h3>
+                    Assigner les membres publics
+                </h3>
+                <img data-src="./medias/UnityGOAsPublicMember.png" width="1200px"/>
+            </section>
+
+            <section>
+                <h2>
+                    Modifier d'autres GOs dynamiques
+                </h2>
+                <h3>
+                    Parenter les GOs + itérer
+                </h3>
+                <img data-src="./medias/UnityIterateOverTransforms.png" width="1200px"/>
+            </section>
+
+            <section>
+                <h2>
+                    Rechercher des GOs à l'exécution
+                </h2>
+                <h3>
+                    <highlight>À ÉVITER</highlight>
+                </h3>
+                <img data-src="./medias/UnitySearchGO.png" width="1200px"/>
+            </section>
+
+            <section>
+                <h2>
+                    Instancier et Détruire des GOs à l'exécution
+                </h2>
+                <center>
+                    <iframe width="1200" height="400"
+                        src="https://docs.unity3d.com/ScriptReference/Object.Instantiate.html"></iframe>
+                </center>
+                <center>
+                    <iframe width="1200" height="400"
+                        src="https://docs.unity3d.com/ScriptReference/Object.Destroy.html"></iframe>
+                </center>
+            </section>
+
+            <section>
+                <h2>
+                    User Inputs
+                </h2>
+                
+                <div class="container">
+                    <div class="col-left">
+                        <img data-src="./medias/UnityEditProjectSettings.png" width="600px" />
+                    </div>
+                    <div class="col-right">
+                        <img data-src="./medias/UnityInputManagerWindow.png" width="1200px" />
+                    </div>
+            </section>
+
+            <section>
+                <h2>
+                    User Inputs
+                </h2>
+                <img data-src="./medias/UnityInputGetAxis.png" width="1400px" />
+            </section>
+
+            <section>
+                <h2>
+                    Coroutines
+                </h2>
+                <h3>
+                    Event Functions sont synchrones
+                </h3>
+                <h3>
+                    Répartir les calculs sur plusieurs frames
+                </h3>
+                <img data-src="./medias/UnityCoroutine1.png" width="1400px" />
+            </section>
+
+            <section>
+                <h2>
+                    Coroutines
+                </h2>
+                <h3>
+                    Event Functions sont synchrones
+                </h3>
+                <h3>
+                    Créer un Timer
+                </h3>
+                <img data-src="./medias/UnityCoroutine2.png" width="1400px" />
+            </section>
+        </div>
+    </div>
+    </div>
+
+    <!----------          CONTENT          ---------->
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+            width: 1920,
+            height: 1080,
+            //transition: "none",
+
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+        });
+    </script>
+</body>
+
+</html>
